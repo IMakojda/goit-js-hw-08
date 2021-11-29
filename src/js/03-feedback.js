@@ -37,6 +37,5 @@ function onFormSubmit(evt) {
 
 function onTextInput(evt){
     formObject[evt.target.name]=evt.target.value;
-    console.log(formObject);
     localStorage.setItem(keyStorage,JSON.stringify(formObject))
 }
