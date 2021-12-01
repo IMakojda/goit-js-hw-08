@@ -22,8 +22,9 @@ function savedMessageLocal(){
     const savedMessage=localStorage.getItem(keyStorage);
     if (savedMessage){
           const formInput=JSON.parse(localStorage.getItem(keyStorage));
-            form.email.value=formInput.email;
-            form.message.value=formInput.message;
+          if(formInput.email){form.email.value=formInput.email;}
+          if(formInput.message){form.message.value=formInput.message;} 
+         
     }   
 }
 
